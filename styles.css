@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: cornsilk;
+}
+
+.calculator {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculator h1 {
+    margin-bottom: 20px;
+}
+
+.calculator input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 22%;
+    padding: 10px;
+    border: none;
+    margin: 15 px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 600px) 
+{
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons button {
+        width: 10%;
+        margin: 10px 0;
+    }
+}  
+/*
+    padding: 10%; Porcentaje del tamaño del contenedor
+    padding: 10vw; Porcentaje del ancho de la ventana grafica;
+    padding: 10vh porcentaje del alto de la ventana grafica
+    padding: 10em
+    padding: 10rem
+*/
